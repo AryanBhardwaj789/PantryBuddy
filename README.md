@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PantryBuddy
 
-## Getting Started
+PantryBuddy is your ultimate kitchen companion, designed to streamline the way you manage your pantry. This user-friendly web application helps you keep track of your pantry inventory with ease, ensuring you never run out of essential ingredients. With PantryBuddy, you can add new items, remove items, and update the quantities of items in your pantry with just a few clicks. The intuitive search functionality allows you to quickly find what you need, while the integrated recipe suggestion feature offers creative meal ideas based on the ingredients you already have on hand.
 
-First, run the development server:
+Built with modern web technologies such as Next.js, Firebase, and Material-UI, PantryBuddy provides a seamless, responsive experience across all devices. Whether you're on your phone, tablet, or desktop, managing your pantry has never been more convenient.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Add, remove, and update pantry items
+- Search functionality to quickly find items
+- Integrated recipe suggestion feature based on available ingredients
+- Responsive design for seamless use across devices
+- Built with Next.js, Firebase, and Material-UI
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To get started with PantryBuddy, follow these steps:
 
-## Learn More
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/pantrybuddy.git
+    cd pantrybuddy
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up Firebase:**
+    - Create a new project in Firebase
+    - Add a Firestore database to your project
+    - Get your Firebase config object from your Firebase project settings and add it to a `.env.local` file in the root of your project:
+    ```plaintext
+    NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+    NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+5. **Open the app in your browser:**
+    ```plaintext
+    http://localhost:3000
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Add Item:** Click the "Add New Item" button, enter the item name, and click "Add".
+- **Remove Item:** Click the "Remove" button next to the item you wish to remove.
+- **Search Item:** Use the search bar to find items quickly.
+- **Update Item Quantity:** Use the plus and minus buttons to increase or decrease the quantity of an item.
+- **Recipe Suggestions:** Based on your current pantry items, click on the recipe suggestion button to get meal ideas.
+
+## Tech Stack
+
+- **Next.js:** A React framework for server-rendered or statically-exported React apps.
+- **Firebase:** A platform developed by Google for creating mobile and web applications, used for the database and authentication.
+- **Material-UI:** A popular React UI framework for building responsive web applications.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any changes or enhancements.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Thank you for using PantryBuddy! If you have any questions or feedback, please feel free to open an issue or contact us directly.
