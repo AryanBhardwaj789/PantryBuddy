@@ -146,7 +146,7 @@ export default function Home() {
         </Modal>
         <Container maxWidth="md">
           <Typography variant="h2" color={'#333'} textAlign={'center'} gutterBottom>
-            Pantry Tracker
+            Pantry Buddy
           </Typography>
           <Stack direction="row" spacing={2} mb={2}>
             <TextField
